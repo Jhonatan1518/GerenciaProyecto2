@@ -1,0 +1,18 @@
+/* Emulando un móvil en pantalla */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Toma el alto completo de la pantalla */
+  background: #000; /* Fondo exterior negro */
+}
+
+.mobile-container {
+  width: 375px; /* Ancho típico de un iPhone */
+  height: 667px; /* Alto típico de un iPhone */
+  border: 10px solid #333; /* Borde para simular un móvil */
+  border-radius: 40px; /* Esquinas redondeadas */
+  overflow: hidden; /* Oculta el contenido que se sale */
+  box-shadow: 0 0 30px rgba(0,0,0,0.5); /* Sombra para dar profundidad */
+  background: #000; /* Fondo negro interno */
+}

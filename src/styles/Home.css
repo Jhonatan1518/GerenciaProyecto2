@@ -1,0 +1,107 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* Contenedor principal */
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar superior */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 40px;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+}
+
+/* Contenedor de partidos */
+.matches {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Tarjeta de partido */
+.match-card {
+  background: #111;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.match-card:hover {
+  transform: scale(1.02);
+}
+
+.match-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.vs-section {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.progress-bar {
+  display: flex;
+  margin-top: 10px;
+  height: 8px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+}
+
+.green {
+  background: #4caf50;
+}
+
+.blue {
+  background: #2196f3;
+}
+
+.red {
+  background: #f44336;
+}
+
+/* Bottom nav */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #111;
+  padding: 10px 0;
+}
+
+.nav-item {
+  font-size: 1.2rem;
+}

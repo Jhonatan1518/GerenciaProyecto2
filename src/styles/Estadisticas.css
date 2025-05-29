@@ -1,0 +1,125 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+/* Contenedor principal de Estadísticas */
+.app {
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+header .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 64px;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+header p {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+/* Contenedor de las estadísticas */
+.estadisticas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Tarjetas de estadísticas */
+.estadisticas-card {
+  background: #111;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.05);
+}
+
+.estadisticas-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Barra de progreso */
+.bar-container {
+  width: 100%;
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 4px 0;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.bar-fill.blue {
+  background: #2196f3;
+}
+
+.bar-fill.red {
+  background: #f44336;
+}
+
+/* Fila de información */
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+/* Pie chart */
+.estadisticas-piechart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* Leyenda */
+.legend {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+.text-blue-400 {
+  color: #2196f3;
+}
+
+.text-red-400 {
+  color: #f44336;
+}
